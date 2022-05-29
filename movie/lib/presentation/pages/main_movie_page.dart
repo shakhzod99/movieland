@@ -133,7 +133,7 @@ class _MainMoviePageState extends State<MainMoviePage> {
                                           ),
                                           const SizedBox(width: 4.0),
                                           Text(
-                                            'Now Playing'.toUpperCase(),
+                                            'Сейчас смотрят'.toUpperCase(),
                                             style: const TextStyle(
                                               fontSize: 16.0,
                                             ),
@@ -216,7 +216,7 @@ class _MainMoviePageState extends State<MainMoviePage> {
             }),
             SubHeading(
               valueKey: 'seePopularMovies',
-              text: 'Popular',
+              text: 'Популярные',
               onSeeMoreTapped: () => Navigator.pushNamed(
                 context,
                 PopularMoviesPage.routeName,
@@ -263,7 +263,7 @@ class _MainMoviePageState extends State<MainMoviePage> {
             }),
             SubHeading(
               valueKey: 'seeTopRatedMovies',
-              text: 'Top Rated',
+              text: 'Рейтинговые',
               onSeeMoreTapped: () => Navigator.pushNamed(
                 context,
                 TopRatedMoviesPage.routeName,

@@ -151,7 +151,7 @@ class MinimalDetail extends StatelessWidget {
                     children: const [
                       Icon(Icons.info_outline, size: 16.0),
                       SizedBox(width: 8.0),
-                      Text('Detail & More'),
+                      Text('Детали'),
                     ],
                   ),
                   const Icon(Icons.arrow_forward_ios_rounded, size: 16.0),

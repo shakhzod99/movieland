@@ -262,8 +262,8 @@ class _TvDetailContentState extends State<TvDetailContent>
                         const SizedBox(width: 16.0),
                         Text(
                           widget.isAddedToWatchlist
-                              ? 'Added to watchlist'
-                              : 'Add to watchlist',
+                              ? 'Добавлено в избранное'
+                              : 'Добавить в избранное',
                           style: TextStyle(
                             color: widget.isAddedToWatchlist
                                 ? Colors.white

@@ -12,7 +12,7 @@ class TvSearchPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Search Tv'),
+        title: const Text('Поиск фильмов'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -25,7 +25,7 @@ class TvSearchPage extends StatelessWidget {
                 context.read<TvSearchBloc>().add(OnQueryChanged(query));
               },
               decoration: InputDecoration(
-                hintText: 'Search tv shows',
+                hintText: 'Поиск сериалов и тв-шоу',
                 prefixIcon: const Icon(
                   Icons.search,
                   color: Colors.white70,

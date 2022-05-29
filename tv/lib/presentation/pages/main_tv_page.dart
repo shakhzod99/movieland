@@ -213,7 +213,7 @@ class _MainTvPageState extends State<MainTvPage> {
             }),
             SubHeading(
               valueKey: 'seePopularTvs',
-              text: 'Popular',
+              text: 'Популярные',
               onSeeMoreTapped: () => Navigator.pushNamed(
                 context,
                 PopularTvsPage.routeName,
@@ -260,7 +260,7 @@ class _MainTvPageState extends State<MainTvPage> {
             }),
             SubHeading(
               valueKey: 'seeTopRatedTvs',
-              text: 'Top Rated',
+              text: 'Рейтинговые',
               onSeeMoreTapped: () => Navigator.pushNamed(
                 context,
                 TopRatedTvsPage.routeName,

@@ -84,7 +84,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
           return Stack(
             children: [
               SizedBox(
-                width: 220.0,
+                width: 270.0,
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Column(
@@ -99,41 +99,41 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                           backgroundColor: Colors.white,
                         ),
                       ),
-                      const SizedBox(height: 128.0),
-                      Row(
-                        children: [
-                          Expanded(
-                            child: ClipRRect(
-                              borderRadius: BorderRadius.circular(8.0),
-                              child: const Image(
-                                image: AssetImage('assets/user.png'),
-                              ),
-                            ),
-                          ),
-                          const SizedBox(width: 16.0),
-                          Expanded(
-                            flex: 6,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  'Created by',
-                                  style: kHeading6.copyWith(
-                                    fontSize: 12.0,
-                                  ),
-                                ),
-                                Text(
-                                  'Shakhzod',
-                                  style: kBodyText.copyWith(
-                                    color: Colors.white70,
-                                      fontSize: 16.0
-                                  ),
-                                ),
-                              ],
-                            ),
-                          )
-                        ],
-                      ),
+                      const SizedBox(height: 50.0),
+                      // Row(
+                      //   children: [
+                      //     Expanded(
+                      //       child: ClipRRect(
+                      //         borderRadius: BorderRadius.circular(8.0),
+                      //         child: const Image(
+                      //           image: AssetImage('assets/user.png'),
+                      //         ),
+                      //       ),
+                      //     ),
+                      //     const SizedBox(width: 16.0),
+                      //     Expanded(
+                      //       flex: 6,
+                      //       child: Column(
+                      //         crossAxisAlignment: CrossAxisAlignment.start,
+                      //         children: [
+                      //           Text(
+                      //             'Создано с любовью',
+                      //             style: kHeading6.copyWith(
+                      //               fontSize: 12.0,
+                      //             ),
+                      //           ),
+                      //           Text(
+                      //             'Шахзодом',
+                      //             style: kBodyText.copyWith(
+                      //               color: Colors.white70,
+                      //                 fontSize: 16.0
+                      //             ),
+                      //           ),
+                      //         ],
+                      //       ),
+                      //     )
+                      //   ],
+                      // ),
                       const SizedBox(height: 32.0),
                       Consumer<HomeNotifier>(builder: (context, data, child) {
                         return Column(
@@ -147,7 +147,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                 toggle();
                               },
                               leading: const Icon(Icons.movie),
-                              title: const Text('Movies'),
+                              title: const Text('Фильмы'),
                               selected: data.state == GeneralContentType.movie,
                               style: ListTileStyle.drawer,
                               iconColor: Colors.white70,
@@ -167,7 +167,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                 toggle();
                               },
                               leading: const Icon(Icons.tv),
-                              title: const Text('Tv Show'),
+                              title: const Text('Шоу и сериалы'),
                               selected: data.state == GeneralContentType.tv,
                               style: ListTileStyle.drawer,
                               iconColor: Colors.white70,
@@ -187,7 +187,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                           Navigator.pushNamed(context, WatchlistPage.routeName);
                         },
                         leading: const Icon(Icons.save_alt),
-                        title: const Text('Watchlist'),
+                        title: const Text('Избранное'),
                         iconColor: Colors.white70,
                         textColor: Colors.white70,
                       ),
@@ -197,7 +197,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                           Navigator.pushNamed(context, aboutRoute);
                         },
                         leading: const Icon(Icons.info_outline),
-                        title: const Text('About'),
+                        title: const Text('О приложении'),
                         iconColor: Colors.white70,
                         textColor: Colors.white70,
                       ),

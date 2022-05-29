@@ -12,7 +12,7 @@ class MovieSearchPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Search Movie'),
+        title: const Text('Поиск фильмов'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -25,7 +25,7 @@ class MovieSearchPage extends StatelessWidget {
                 context.read<MovieSearchBloc>().add(OnQueryChanged(query));
               },
               decoration: InputDecoration(
-                hintText: 'Search movies',
+                hintText: 'Поиск фильмов',
                 prefixIcon: const Icon(
                   Icons.search,
                   color: Colors.white70,

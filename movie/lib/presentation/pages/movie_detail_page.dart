@@ -227,8 +227,8 @@ class MovieDetailContent extends StatelessWidget {
                         const SizedBox(width: 16.0),
                         Text(
                           isAddedToWatchlist
-                              ? 'Added to watchlist'
-                              : 'Add to watchlist',
+                              ? 'Добавлено в избранное'
+                              : 'Добавить в избранное',
                           style: TextStyle(
                             color: isAddedToWatchlist
                                 ? Colors.white
